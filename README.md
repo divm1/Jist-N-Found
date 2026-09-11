@@ -13,18 +13,21 @@ HTML5
 CSS3 (no frameworks)
 Vanilla JavaScript
 Browser localStorage for data persistence (no database/server)
-Getting Started
+
+**Getting Started**
 Clone or download this repository
 Open index.html in any browser — no build step or server needed
 bash
-git clone <your-repo-url>
+git clone [<your-repo-url>](https://github.com/divm1/Jist-N-Found)
 cd lost-and-found
 open index.html
-Project Structure
+
+**Project Structure**
 lost-and-found/
 ├── index.html      # Home page
 ├── report.html     # Report an item
 ├── browse.html     # Browse & search items
+├── contact.html    # Contacts for the team/management
 ├── style.css       # Styling
 ├── script.js       # Form handling, search/filter logic, localStorage
 └── README.md
