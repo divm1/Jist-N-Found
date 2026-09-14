@@ -22,9 +22,15 @@ body {
   font-family: Arial, Helvetica, Montserrat, sans-serif;
 }
 
-.cardlist .carditem {
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px
+}
+
+.card-list .card-item {
   color: #0b0b0b;
-  width: 700px;
+  width: 400px;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -34,14 +40,14 @@ body {
   background: rgba(0,0,0,0.2);
 }
 
-.cardlist .carditem .carddescription {
+.card-list .card-item .card-description {
   font-size: 1.15rem;
   color: #0b0b0b;
   font-weight: 500;
   margin:14px 0 40px;
 }
 
-.cardlist .carditem .cardbutton {
+.card-list .card-item .card-button {
   font-size: 1.25rem;
   color: #0b0b0b;
   font-weight: 500;
@@ -52,7 +58,7 @@ body {
   background-color: #f8f8f8;
 }
 
-.cardlist .carditem .cardbutton:hover {
+.card-list .card-item .card-button:hover {
   background-color: rgb(255,255,255,0.2);
   border: 1px solid #fff;
   color:#fff;
@@ -124,24 +130,30 @@ button {
 }
 .mainpage {
   background-color: #ffffff;
-  padding: 40px 20px;
+  padding: 10px 10px;
   color: #17231f;
 }
 .intro {
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: 0 0 40px 40px;
+  text-align: left;
 }
 .docs-intro {
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: 0 0 40px 40px;
+  text-align: left;
 }
 .browse-intro {
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: 0 0 40px 40px;
+  text-align: left;
 }
+
 .report-intro {
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: 0 0 40px 40px;
+  text-align: left;
+
 }
 
 .docs-label {
@@ -153,12 +165,12 @@ button {
 .intro h1 {
   font-size: 60px;
   line-height: 1;
-  margin: 30px 0;
+  margin-left: 5px;
 }
 .docs-intro h1 {
   font-size: 60px;
   line-height: 1;
-  margin: 30px 0;
+  margin-left: 5px;
 }
 .browse-intro h1 {
   font-size: 60px;
