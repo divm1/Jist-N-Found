@@ -4,52 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report page</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
     <div id="header-placeholder"></div>
-    <h1>Report a Missing Item</h1>
-    <hr>
-    <form action="index.php" method="POST">
-        <label for="item-name">Item Name:</label>
-        <input type="text" id="item-name" name="item-name" required>
-        <br>
-        <label for="lost-or-found">Lost or Found:</label>
-        <select id="lost-or-found" name="lost-or-found" required>
-            <option value="">Select an option</option>
-            <option value="lost">Lost</option>
-            <option value="found">Found</option>
-        </select>
-        <br>
+    <main class="mainpage">
+        <section class="report-intro">
+            <h1>Report a Missing Item</h1>
+            <p class="report-description">
+                Please fill out the form below to report a lost or found item. Make sure to provide accurate information to help others identify the item.
+            </p>
+        </section>
+            <form action="index.php" method="POST">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" name="item-name" required>
+                <br>
+                <label for="lost-or-found">Lost or Found:</label>
+                <select id="lost-or-found" name="lost-or-found" required>
+                    <option value="">Select an option</option>
+                    <option value="lost">Lost</option>
+                    <option value="found">Found</option>
+                </select>
+                <br>
 
-        <label for="item-category">Category:</label>
-        <select id="item-category" name="item-category" required>
-            <option value="">Select a category</option>
-            <option value="electronics">Electronics</option>
-            <option value="clothing">Clothing</option>
-            <option value="accessories">Accessories</option>
-            <option value="documents">Documents</option>
-            <option value="other">Other</option>
-        </select>
-        <br>
+                <label for="item-category">Category:</label>
+                <select id="item-category" name="item-category" required>
+                    <option value="">Select a category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="documents">Documents</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
 
-        <label for="item-date">Date Found:</label>
-        <input type="date" id="item-date" name="item-date" required>
-        <br>
+                <label for="item-date">Date Found:</label>
+                <input type="date" id="item-date" name="item-date" required>
+                <br>
 
-        <label for="item-description">Description:</label>
-        <textarea id="item-description" name="item-description" required></textarea>
-        <br>
+                <label for="item-description">Description:</label>
+                <textarea id="item-description" name="item-description" required></textarea>
+                <br>
 
-        <label for="item-location">Location Found:</label>
-        <input type="text" id="item-location" name="item-location" required>
-        <br>
+                <label for="item-location">Location Found:</label>
+                <input type="text" id="item-location" name="item-location" required>
+                <br>
 
-        <label for="contact-info">Phone Number:</label>
-        <input type="tel" id="contact-info" name="contact-info" minlength="10" maxlength="12" required>
-        <br>
+                <label for="contact-info">Phone Number:</label>
+                <input type="tel" id="contact-info" name="contact-info" minlength="10" maxlength="12" required>
+                <br>
 
-        <button type="submit">Submit Report</button>
-    </form>
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
