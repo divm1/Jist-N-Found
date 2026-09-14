@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --bgcolor: #f8f8f8;
 }
@@ -11,11 +13,49 @@
   background-color: var(--bgcolor);
   padding: 1.3rem;
   display: flex;
+  align-items: center;
+  position: relative;
   justify-content: space-between;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, Montserrat, sans-serif;
+}
+
+.cardlist .carditem {
+  color: #0b0b0b;
+  width: 700px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2);
+}
+
+.cardlist .carditem .carddescription {
+  font-size: 1.15rem;
+  color: #0b0b0b;
+  font-weight: 500;
+  margin:14px 0 40px;
+}
+
+.cardlist .carditem .cardbutton {
+  font-size: 1.25rem;
+  color: #0b0b0b;
+  font-weight: 500;
+  padding: 10px 35px;
+  border-radius: 6px;
+  cursor:pointer;
+  border: none;
+  background-color: #f8f8f8;
+}
+
+.cardlist .carditem .cardbutton:hover {
+  background-color: rgb(255,255,255,0.2);
+  border: 1px solid #fff;
+  color:#fff;
 }
 
 .logo {
@@ -51,7 +91,7 @@ button {
   border-radius: 5px;
   padding: 0.9rem;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .nav-bar {
     display: none;
     position: absolute;
@@ -82,3 +122,117 @@ button {
     font-size: 1.4rem;
   }
 }
+.mainpage {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  color: #17231f;
+}
+.intro {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+.docs-intro {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+.browse-intro {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+.report-intro {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.docs-label {
+  color: hsl(0, 45%, 65%);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.intro h1 {
+  font-size: 60px;
+  line-height: 1;
+  margin: 30px 0;
+}
+.docs-intro h1 {
+  font-size: 60px;
+  line-height: 1;
+  margin: 30px 0;
+}
+.browse-intro h1 {
+  font-size: 60px;
+  line-height: 0;
+  margin: 30px 0;
+}
+.report-intro h1 {
+  font-size: 60px;
+  line-height: 0;
+  margin: 30px 0;
+}
+
+.intro-description {
+  color: #8c7b77;
+  font-size: 18px;
+  max-width: 600px;
+}
+.docs-description {
+  color: #8c7b77;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+.doc-card {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 24px;
+  min-height: 200px;
+}
+
+.doc-card span {
+  color: hsl(0, 45%, 65%);
+  font-weight: bold;  
+}
+
+.doc-card h2 {
+  font-size: 22px;
+  margin-top: 45px;
+}
+
+.doc-card p {
+  color: #8c7b77;
+  line-height: 1.5;
+}
+
+.doc-card a {
+  color: hsl(0, 45%, 65%);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.doc-card a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  .docs-intro h1 {
+    font-size: 40px;
+  }
+
+  .docs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-card {
+    min-height: 170px;
+  }
+}
+
+
