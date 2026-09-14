@@ -24,20 +24,22 @@ body {
 
 .slider-wrapper {
   overflow: hidden;
-  max-width: 1200px;
-  margin: 0 70px 55px
+  max-width: 1500px;
+  margin: 0 20px 70px
 }
 
 .card-list .card-item {
   color: #0b0b0b;
-  width: 400px;
-  padding: 50px;
+  width: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 300px;
+  box-sizing: border-box;
   justify-content: center;
   border-radius: 10px;
-  background: rgba(0,0,0,0.2);
+  background: #E5ECF4;
 }
 
 .card-list .card-item .card-description {
@@ -59,7 +61,7 @@ body {
 }
 
 .card-list .card-item .card-button:hover {
-  background-color: rgb(255,255,255,0.2);
+  background-color: #71b2fc;
   border: 1px solid #fff;
   color:#fff;
 }
@@ -129,7 +131,7 @@ button {
   }
 }
 .mainpage {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 10px 10px;
   color: #17231f;
 }
@@ -138,58 +140,23 @@ button {
   margin: 0 0 40px 40px;
   text-align: left;
 }
-.docs-intro {
-  max-width: 1000px;
-  margin: 0 0 40px 40px;
-  text-align: left;
-}
-.browse-intro {
-  max-width: 1000px;
-  margin: 0 0 40px 40px;
-  text-align: left;
-}
-
-.report-intro {
-  max-width: 1000px;
-  margin: 0 0 40px 40px;
-  text-align: left;
-
-}
 
 .docs-label {
-  color: hsl(0, 45%, 65%);
+  color: #8B5FBF;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
 .intro h1 {
-  font-size: 60px;
-  line-height: 1;
+  font-size: 48px;
+  line-height: 1.1;
   margin-left: 5px;
-}
-.docs-intro h1 {
-  font-size: 60px;
-  line-height: 1;
-  margin-left: 5px;
-}
-.browse-intro h1 {
-  font-size: 60px;
-  line-height: 0;
-  margin: 30px 0;
-}
-.report-intro h1 {
-  font-size: 60px;
-  line-height: 0;
-  margin: 30px 0;
+  margin-bottom: 12px;
+  margin: 15px 0;
 }
 
-.intro-description {
-  color: #8c7b77;
-  font-size: 18px;
-  max-width: 600px;
-}
-.docs-description {
-  color: #8c7b77;
+.description {
+  color: #6C6EA0;
   font-size: 18px;
   max-width: 600px;
 }
@@ -209,7 +176,7 @@ button {
 }
 
 .doc-card span {
-  color: hsl(0, 45%, 65%);
+  color: #2C666E;
   font-weight: bold;  
 }
 
@@ -219,18 +186,124 @@ button {
 }
 
 .doc-card p {
-  color: #8c7b77;
+  color: #140c39;
   line-height: 1.5;
 }
 
 .doc-card a {
-  color: hsl(0, 45%, 65%);
+  color: #2589BD;
   font-weight: bold;
   text-decoration: none;
 }
 
 .doc-card a:hover {
   text-decoration: underline;
+}
+
+.page-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.page-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.page-form input,
+.page-form select,
+.page-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.page-form textarea {
+    height: 120px;
+}
+
+.page-form button {
+    font-size: 1.25rem;
+    color: #0b0b0b;
+    font-weight: 500;
+    padding: 10px 35px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    background-color: #f8f8f8;
+}
+
+.page-form button:hover {
+    background-color: #71b2fc;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.browse-form {
+    max-width: 700px;
+    margin: 0 0 40px 40px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.browse-form input,
+.browse-form select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 8px 0 18px;
+    font-size: 17px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.browse-form button {
+    font-size: 1.25rem;
+    color: #0b0b0b;
+    font-weight: 500;
+    padding: 10px 35px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    background-color: #f8f8f8;
+}
+
+.browse-form button:hover {
+    background-color: #71b2fc;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 0 40px 40px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 8px 0 18px;
+    font-size: 17px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
 }
 
 @media screen and (max-width: 700px) {
@@ -245,6 +318,11 @@ button {
   .doc-card {
     min-height: 170px;
   }
+
+  .browse-form,
+  .contact-form {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
-
-
