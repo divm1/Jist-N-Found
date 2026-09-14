@@ -14,3 +14,26 @@ fetch('header.html')
   .then(html => {
     document.getElementById('header-placeholder').innerHTML = html;
   });
+
+const swiper = new Swiper('.sliderwrapper', {
+    loop: true,
+    
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: { 
+      0:{
+        slidesPerView: 1,
+      },
+      620:{
+        slidesPerView: 2,
+      },
+      1024:{
+        slidesPerView: 3,
+      },
+    }
+});
