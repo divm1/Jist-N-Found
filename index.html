@@ -12,8 +12,6 @@
 </head>
 <body>
     <div id="header-placeholder"></div>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <main class="mainpage">
         <section class="intro">
             <h1>Welcome to Findesk</h1>
@@ -23,19 +21,33 @@
         </section>
     
     <div class="container swiper">
-        <div class="sliderwrapper">
-            <div class="cardlist swiper-wrapper">
-                <div class="carditem swiper-slide">
-                    <h2 class="cardtitle">Lost Something?</h2>
-                <p class="carddescription">
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
+                    <h2 class="card-title">Lost Something?</h2>
+                    <p class="card-description">
                     Report your lost items and help others find what they're looking for.
-                </p>
-                <button class="cardbutton">
-                    Report Lost Item
-                </button>
+                    </p>
+                    <button class="card-button">
+                        Report Lost Item
+                    </button>
+                </div>
+                <div class="card-item swiper-slide">
+                    <h2 class="card-title">Looking for College Forms?</h2>
+                    <p class="card-description">
+                    Get your essential documents within reach. Find information about commonly requested certificates and learn where to apply for them.
+                    </p>
+                    <button class="card-button">
+                        Get College Forms
+                    </button>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
