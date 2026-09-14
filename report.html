@@ -12,13 +12,13 @@
 <body>
     <div id="header-placeholder"></div>
     <main class="mainpage">
-        <section class="report-intro">
+        <section class="intro">
             <h1>Report a Missing Item</h1>
-            <p class="report-description">
+            <p class="description">
                 Please fill out the form below to report a lost or found item. Make sure to provide accurate information to help others identify the item.
             </p>
         </section>
-            <form action="index.php" method="POST">
+            <form class="page-form" action="index.php" method="POST" id="report-form">
                 <label for="item-name">Item Name:</label>
                 <input type="text" id="item-name" name="item-name" required>
                 <br>
@@ -41,7 +41,7 @@
                 </select>
                 <br>
 
-                <label for="item-date">Date Found:</label>
+                <label for="item-date">Date:</label>
                 <input type="date" id="item-date" name="item-date" required>
                 <br>
 
@@ -49,7 +49,7 @@
                 <textarea id="item-description" name="item-description" required></textarea>
                 <br>
 
-                <label for="item-location">Location Found:</label>
+                <label for="item-location">Location:</label>
                 <input type="text" id="item-location" name="item-location" required>
                 <br>
 
@@ -57,7 +57,7 @@
                 <input type="tel" id="contact-info" name="contact-info" minlength="10" maxlength="12" required>
                 <br>
 
-                <button type="submit">Submit Report</button>
+                <a href="index.html"><button type="submit">Submit Report</button></a>
             </form>
         </section>
     </main>
