@@ -15,11 +15,20 @@ fetch('header.html')
     document.getElementById('header-placeholder').innerHTML = html;
   });
 
-const swiper = new Swiper('.sliderwrapper', {
+const swiper = new Swiper('.slider-wrapper', {
     loop: true,
+    grabcursor: true,
+    centeredSlides: true,
+    spaceBetween: 40,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     
     pagination: {
         el: '.swiper-pagination',
+        clickable:true,
+        dynamicBullets: true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
@@ -30,10 +39,10 @@ const swiper = new Swiper('.sliderwrapper', {
         slidesPerView: 1,
       },
       620:{
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       1024:{
-        slidesPerView: 3,
+        slidesPerView: 1,
       },
     }
 });
