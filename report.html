@@ -19,10 +19,10 @@
             </p>
         </section>
             <form class="page-form" action="index.php" method="POST" id="report-form">
-                <label for="item-name">Item Name:</label>
+                <label for="item-name">Item Name:<span style="color: red;"> *</span></label>
                 <input type="text" id="item-name" name="item-name" required>
                 <br>
-                <label for="lost-or-found">Lost or Found:</label>
+                <label for="lost-or-found">Lost or Found:<span style="color: red;"> *</span></label>
                 <select id="lost-or-found" name="lost-or-found" required>
                     <option value="">Select an option</option>
                     <option value="lost">Lost</option>
@@ -31,7 +31,7 @@
                 <br>
 
                 <label for="item-category">Category:</label>
-                <select id="item-category" name="item-category" required>
+                <select id="item-category" name="item-category">
                     <option value="">Select a category</option>
                     <option value="electronics">Electronics</option>
                     <option value="clothing">Clothing</option>
@@ -41,19 +41,19 @@
                 </select>
                 <br>
 
-                <label for="item-date">Date:</label>
+                <label for="item-date">Date:<span style="color: red;"> *</span></label>
                 <input type="date" id="item-date" name="item-date" required>
                 <br>
 
                 <label for="item-description">Description:</label>
-                <textarea id="item-description" name="item-description" required></textarea>
+                <textarea id="item-description" name="item-description"></textarea>
                 <br>
 
                 <label for="item-location">Location:</label>
-                <input type="text" id="item-location" name="item-location" required>
+                <input type="text" id="item-location" name="item-location">
                 <br>
 
-                <label for="contact-info">Phone Number:</label>
+                <label for="contact-info">Phone Number:<span style="color: red;"> *</span></label>
                 <input type="tel" id="contact-info" name="contact-info" minlength="10" maxlength="12" required>
                 <br>
 
